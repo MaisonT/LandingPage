@@ -21,6 +21,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .plan {
   width: 340px;
   height: 440px;
@@ -71,6 +72,19 @@ export default {
     color: white;
     border: 1px solid #2A407C;
     margin-top: 42px;
+  }
+}
+.plan:hover {
+  background: #FFFFFF;
+  hr {
+    background: #D3D9E9;
+  }
+  h1, h3, span {
+    color: black;
+  }
+  button {
+    background: #EF2A82;
+    border: none;
   }
 }
 </style>
