@@ -1,51 +1,49 @@
 <template>
   <div class="screenshots">
-    <div class="container">
-      <div class="container-mini">
-        <div class="text-info">
-          <h2>
-            Automated Reports
-            & Widget Alerts
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Elementum nisi aliquet volutpat pellentesque volutpat est.
-            Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
-            Vitae et, tortor pulvinar risus pulvinar sit amet.
-          </p>
-        </div>
-        <img alt="" src="@/assets/images/screenshots/screen01.svg"/>
+    <div class="container-mini">
+      <div class="text-info">
+        <h2>
+          Automated Reports
+          & Widget Alerts
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Elementum nisi aliquet volutpat pellentesque volutpat est.
+          Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
+          Vitae et, tortor pulvinar risus pulvinar sit amet.
+        </p>
       </div>
+      <img alt="" src="@/assets/images/screenshots/screen01.svg"/>
+    </div>
 
-      <div class="container-mini">
-        <img alt="" src="@/assets/images/screenshots/screen02.svg"/>
-        <div class="text-info">
-          <h2>
-            Fully customizable to address your needs
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Elementum nisi aliquet volutpat pellentesque volutpat est.
-            Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
-            Vitae et, tortor pulvinar risus pulvinar sit amet.
-          </p>
-        </div>
+    <div class="container-mini">
+      <img alt="" src="@/assets/images/screenshots/screen02.svg"/>
+      <div class="text-info">
+        <h2>
+          Fully customizable to address your needs
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Elementum nisi aliquet volutpat pellentesque volutpat est.
+          Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
+          Vitae et, tortor pulvinar risus pulvinar sit amet.
+        </p>
       </div>
+    </div>
 
-      <div class="container-mini" style="margin-bottom: 0;">
-        <div class="text-info">
-          <h2>
-            Pre-built Dashboard Templates
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Elementum nisi aliquet volutpat pellentesque volutpat est.
-            Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
-            Vitae et, tortor pulvinar risus pulvinar sit amet.
-          </p>
-        </div>
-        <img alt="" src="@/assets/images/screenshots/screen03.svg"/>
+    <div class="container-mini" style="margin-bottom: 0;">
+      <div class="text-info">
+        <h2>
+          Pre-built Dashboard Templates
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Elementum nisi aliquet volutpat pellentesque volutpat est.
+          Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
+          Vitae et, tortor pulvinar risus pulvinar sit amet.
+        </p>
       </div>
+      <img alt="" src="@/assets/images/screenshots/screen03.svg"/>
     </div>
   </div>
   <div id="blue"/>
@@ -59,9 +57,6 @@ export default {
 
 <style scoped lang="scss">
 .screenshots {
-  width: 100%;
-}
-.container {
   width: 1180.26px;
   height: 1500px;
   padding-top: 120px;

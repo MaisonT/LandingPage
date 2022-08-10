@@ -1,5 +1,4 @@
 <template>
-<div class="main-features">
   <div class="main-features-block">
     <h1>Main Features</h1>
     <p>
@@ -37,7 +36,6 @@
       </div>
     </div>
   </div>
-</div>
 </template>
 <script>
 export default {
@@ -46,15 +44,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.main-features {
-  width: 100%;
-  z-index: 3;
-}
 .main-features-block {
   width: 1180px;
   margin-right: auto;
   margin-left: auto;
-  padding: 55px 0 100px 0;
+  padding: 55px 0 180px 0;
 
   h1 {
     font-style: normal;

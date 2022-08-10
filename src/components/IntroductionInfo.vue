@@ -23,7 +23,7 @@ export default {
 
 <style scoped lang="scss">
 .introduction-info {
-  padding-top: 102px;
+  padding-top: 150px;
   width: 1180px;
   height: 798px;
   z-index: 3;
@@ -31,7 +31,7 @@ export default {
   .bg-logo-small {
     z-index: 1;
     position: absolute;
-    top: 164px;
+    top: 220px;
     right: 0;
   }
 }
