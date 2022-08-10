@@ -47,6 +47,8 @@
       <img alt="" src="@/assets/images/screenshots/screen03.svg"/>
     </div>
   </div>
+  <div id="pink"/>
+  <div id="blue"/>
 </div>
 </template>
 
@@ -63,7 +65,7 @@ export default {
 }
 .container {
   width: 1180.26px;
-  height: 1470px;
+  height: 1800px;
   padding-top: 120px;
   padding-bottom: 120px;
   margin-left: auto;
@@ -90,5 +92,27 @@ export default {
       margin-bottom: auto;
     }
   }
+}
+#pink {
+  position: absolute;
+  top: 3340px;
+  left: 0;
+  right: 0;
+  height: 281px;
+  width: 100%;
+  max-width: none;
+  background: #EF2A82;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  transform: rotate(0.1deg);
+}
+#blue {
+  position: absolute;
+  height: 281px;
+  width: 100%;
+  max-width: none;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  transform: rotate(0.8deg);
+  background: #172755;
+  top: 3351px;
 }
 </style>

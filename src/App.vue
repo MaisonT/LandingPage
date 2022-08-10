@@ -1,14 +1,15 @@
 <template>
   <AppHeader :scroll="scroll" :scrollTo="scrollTo" />
   <IntroductionInfo id="introduction"/>
-  <hr id="pink"/>
    <div class="bg-logos">
     <img class="bg-logo-small" src="@/assets/images/logos/bg_logo_small.svg" alt="" />
     <img class="bg-logo-medium" src="@/assets/images/logos/bg_logo_medium.svg" alt="" />
     <img class="bg-logo-large" src="@/assets/images/logos/bg_logo_large.svg" alt="" />
   </div>
-  <MainFeatures id="main-features" />
-  <ScreenshotsInfo/>
+  <div class="second-bg">
+    <MainFeatures id="main-features" />
+    <ScreenshotsInfo/>
+  </div>
   <PricingPlan id="prices"/>
   <AppFooter :scroll="scroll" :scrollTo="scrollTo" />
 </template>
@@ -81,6 +82,10 @@ html {
   text-align: center;
   background: #172755;
 
+  .second-bg {
+    background: #E5E5E5;
+    width: 100%;
+  }
   p {
     font-weight: 400;
     font-size: 18px;
@@ -107,12 +112,6 @@ html {
       right: 0;
       bottom: -20px;
     }
-  }
-  #pink {
-    position: relative;
-    border: none;
-    height: 17px;
-    background: #EF2A82;
   }
 }
 </style>

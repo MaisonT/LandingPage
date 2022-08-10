@@ -37,6 +37,8 @@
       </div>
     </div>
   </div>
+  <div id="pink"/>
+  <div id="neutral"/>
 </div>
 </template>
 <script>
@@ -93,5 +95,27 @@ export default {
       width: 380px;;
     }
   }
+}
+#pink {
+  position: absolute;
+  top: 768px;
+  left: 0;
+  right: 0;
+  height: 281px;
+  width: 100%;
+  max-width: none;
+  background: #EF2A82;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  transform: rotate(0.1deg);
+}
+#neutral {
+  position: absolute;
+  height: 281px;
+  width: 100%;
+  max-width: none;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background: #E5E5E5;
+  top: 780px;
+  transform: rotate(0.8deg);
 }
 </style>
