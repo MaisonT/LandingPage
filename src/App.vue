@@ -1,8 +1,7 @@
 <template>
-  <AppHeader/>
-  <IntroductionInfo/>
+  <AppHeader @click="scroll('down')"/>
+  <IntroductionInfo />
   <hr id="pink"/>
-
    <div class="bg-logos">
     <img class="bg-logo-small" src="@/assets/images/logos/bg_logo_small.svg" alt="" />
     <img class="bg-logo-medium" src="@/assets/images/logos/bg_logo_medium.svg" alt="" />
@@ -11,6 +10,7 @@
   <MainFeatures/>
   <ScreenshotsInfo/>
   <PricingPlan />
+  <AppFooter @click="scroll('up')"/>
 </template>
 
 <script>
@@ -19,10 +19,26 @@ import IntroductionInfo from "@/components/IntroductionInfo";
 import MainFeatures from "@/components/MainFeatures";
 import ScreenshotsInfo from "@/components/Screenshots";
 import PricingPlan from "@/components/PricingPlan";
+import AppFooter from "@/components/Footer";
 
 export default {
   name: 'App',
+  methods: {
+    scroll(value) {
+      if(value === 'up')
+        window.scrollTo(0,0);
+      else if(value === 'down') {
+        let scrollHeight = Math.max(
+            document.body.scrollHeight, document.documentElement.scrollHeight,
+            document.body.offsetHeight, document.documentElement.offsetHeight,
+            document.body.clientHeight, document.documentElement.clientHeight
+        );
+        window.scrollTo(0, scrollHeight);
+      }
+    }
+  },
   components: {
+    AppFooter,
     PricingPlan,
     ScreenshotsInfo,
     MainFeatures,

@@ -45,7 +45,7 @@ export default {
 <style scoped lang="scss">
 .pricing-plan {
   width: 1180px;
-  height: 1208px;
+  height: 912px;
   margin-left: auto;
   margin-right: auto;
 

@@ -3,50 +3,50 @@
     <div class="container">
       <img alt="" class="logo" src="@/assets/images/logos/logo.svg" />
       <div class="links-container">
-        <router-link
-            :to="{name: 'MainPage'}"
+        <div
+            @click="scroll"
             active="onclick"
             class="link"
         >
           Products
-        </router-link>
-        <router-link
-            :to="{name: 'MainPage'}"
+        </div>
+        <div
+            @click="scroll"
             active="onclick"
             class="link"
         >
           Pricing
-        </router-link>
-        <router-link
-            :to="{name: 'MainPage'}"
+        </div>
+        <div
+            @click="scroll"
             active="onclick"
             class="link"
         >
           FAQ
-        </router-link>
-        <router-link
-            :to="{name: 'MainPage'}"
+        </div>
+        <div
+            @click="scroll"
             active="onclick"
             class="link"
         >
           Blog
-        </router-link>
+        </div>
       </div>
       <div class="container-sing">
-        <router-link
-            :to="{name: 'MainPage'}"
+        <div
+            @click="scrollDown"
             active="onclick"
             class="sign-in-link"
         >
           Sign in
-        </router-link>
-        <router-link
-            :to="{name: 'MainPage'}"
+        </div>
+        <div
+            @click="scroll"
             active="onclick"
             class="sign-up-link"
         >
           Sign up
-        </router-link>
+        </div>
       </div>
     </div>
   </header>
@@ -55,6 +55,13 @@
 <script>
 export default {
   name: 'AppHeader',
+  methods: {
+    scrollDown() {
+      let elem = this.$el
+      elem.scrollTop = elem.clientHeight;
+      //window.scrollTo(0, 4000);
+    }
+  }
 }
 </script>
 

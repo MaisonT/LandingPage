@@ -63,6 +63,7 @@ export default {
     background: #2A407C;
   }
   button {
+    cursor: pointer;
     align-items: center;
     padding: 10px 80px;
     width: 200px;
