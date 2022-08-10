@@ -37,8 +37,6 @@
       </div>
     </div>
   </div>
-  <div id="pink"/>
-  <div id="neutral"/>
 </div>
 </template>
 <script>
@@ -50,10 +48,9 @@ export default {
 <style scoped lang="scss">
 .main-features {
   width: 100%;
-  background: #E5E5E5;
+  z-index: 3;
 }
 .main-features-block {
-  background: #E5E5E5;
   width: 1180px;
   margin-right: auto;
   margin-left: auto;
@@ -65,7 +62,7 @@ export default {
     font-size: 40px;
     line-height: 47px;
     text-align: center;
-    color: #172755;
+    color: #E5E5E5;
     margin: 0 0 30px 0;
   }
   h2 {
@@ -73,7 +70,7 @@ export default {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: #172755;
+    color: #E5E5E5;
   }
   p {
     font-weight: 400;
@@ -95,27 +92,5 @@ export default {
       width: 380px;;
     }
   }
-}
-#pink {
-  position: absolute;
-  top: 768px;
-  left: 0;
-  right: 0;
-  height: 281px;
-  width: 100%;
-  max-width: none;
-  background: #EF2A82;
-  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-  transform: rotate(0.1deg);
-}
-#neutral {
-  position: absolute;
-  height: 281px;
-  width: 100%;
-  max-width: none;
-  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-  background: #E5E5E5;
-  top: 780px;
-  transform: rotate(0.8deg);
 }
 </style>

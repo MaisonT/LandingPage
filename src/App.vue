@@ -1,15 +1,8 @@
 <template>
   <AppHeader :scroll="scroll" :scrollTo="scrollTo" />
   <IntroductionInfo id="introduction"/>
-   <div class="bg-logos">
-    <img class="bg-logo-small" src="@/assets/images/logos/bg_logo_small.svg" alt="" />
-    <img class="bg-logo-medium" src="@/assets/images/logos/bg_logo_medium.svg" alt="" />
-    <img class="bg-logo-large" src="@/assets/images/logos/bg_logo_large.svg" alt="" />
-  </div>
-  <div class="second-bg">
-    <MainFeatures id="main-features" />
-    <ScreenshotsInfo/>
-  </div>
+  <MainFeatures id="main-features" />
+  <ScreenshotsInfo/>
   <PricingPlan id="prices"/>
   <AppFooter :scroll="scroll" :scrollTo="scrollTo" />
 </template>
@@ -80,38 +73,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   text-align: center;
-  background: #172755;
 
-  .second-bg {
-    background: #E5E5E5;
-    width: 100%;
-  }
   p {
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     color: #8794BA;
-  }
-
-  .bg-logos {
-    z-index: 1;
-    .bg-logo-small {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .bg-logo-medium {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-    .bg-logo-large {
-      position: absolute;
-      right: 0;
-      bottom: -20px;
-    }
   }
 }
 </style>

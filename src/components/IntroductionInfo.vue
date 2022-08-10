@@ -1,18 +1,18 @@
 <template>
-<div class="introduction-info">
-  <div class="introduction-block">
-    <h1>
-      Monitor your business on real-time dashboard
-    </h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Elementum nisi aliquet volutpat pellentesque volutpat est.
-      Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
-    </p>
-    <button>Try for free</button>
+  <div class="introduction-info">
+    <div class="introduction-block">
+      <h1>
+        Monitor your business on real-time dashboard
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Elementum nisi aliquet volutpat pellentesque volutpat est.
+        Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
+      </p>
+      <button>Try for free</button>
+    </div>
+    <img class="bg-logo-small" src="@/assets/images/screenshots/main_screen.svg" alt="" />
   </div>
-  <img class="bg-logo-small" src="@/assets/images/screenshots/main_screen.svg" alt="" />
-</div>
 </template>
 
 <script>
@@ -23,7 +23,6 @@ export default {
 
 <style scoped lang="scss">
 .introduction-info {
-  background: #172755;
   padding-top: 102px;
   width: 1180px;
   height: 798px;
@@ -76,5 +75,15 @@ export default {
       background: #EF1F99;
     }
   }
+}
+#neutral {
+  position: static;
+  z-index: 3;
+  height: 287px;
+  width: 100%;
+  max-width: none;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background: #E5E5E5;
+  top: 780px;
 }
 </style>

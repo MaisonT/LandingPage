@@ -48,6 +48,7 @@ export default {
   height: 912px;
   margin-left: auto;
   margin-right: auto;
+  z-index: 3;
 
   h2 {
     font-style: normal;

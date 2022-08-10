@@ -37,7 +37,7 @@ export default {
 
 <style scoped lang="scss">
 .app-footer {
-  height: 196px;
+  height: 126px;
   width: 1180px;
   margin-left: auto;
   margin-right: auto;
