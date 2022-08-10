@@ -1,15 +1,15 @@
 <template>
   <AppHeader :scroll="scroll" :scrollTo="scrollTo" />
-  <IntroductionInfo />
+  <IntroductionInfo id="introduction"/>
   <hr id="pink"/>
    <div class="bg-logos">
     <img class="bg-logo-small" src="@/assets/images/logos/bg_logo_small.svg" alt="" />
     <img class="bg-logo-medium" src="@/assets/images/logos/bg_logo_medium.svg" alt="" />
     <img class="bg-logo-large" src="@/assets/images/logos/bg_logo_large.svg" alt="" />
   </div>
-  <MainFeatures/>
+  <MainFeatures id="main-features" />
   <ScreenshotsInfo/>
-  <PricingPlan />
+  <PricingPlan id="prices"/>
   <AppFooter :scroll="scroll" :scrollTo="scrollTo" />
 </template>
 
@@ -26,28 +26,35 @@ export default {
   data() {
     return {
       scrollTo: {
-        try: {
+        introduction: {
           name: 'Try for free',
-          scroll: 'up',
+          scroll: 'introduction',
+        },
+        features: {
+          name: 'Main Features',
+          scroll: 'features',
         },
         plans: {
           name: 'Pricing',
-          scroll: 'down',
-        }
+          scroll: 'prices',
+        },
       }
     };
   },
   methods: {
     scroll(value) {
-      if(value === 'up')
-        window.scrollTo(0,0);
-      else if(value === 'down') {
-        let scrollHeight = Math.max(
-            document.body.scrollHeight, document.documentElement.scrollHeight,
-            document.body.offsetHeight, document.documentElement.offsetHeight,
-            document.body.clientHeight, document.documentElement.clientHeight
-        );
-        window.scrollTo(0, (scrollHeight + 196));
+      if(value === 'introduction') {
+        let el = document.getElementById("introduction");
+
+        el.scrollIntoView({block: "center", behavior: "smooth"});
+      }
+      else if(value === 'prices') {
+        let el = document.getElementById("prices");
+        el.scrollIntoView({block: "center", behavior: "smooth"});
+      }
+      else if (value === 'features') {
+        let el = document.getElementById("main-features");
+        el.scrollIntoView({block: "center", behavior: "smooth"});
       }
     }
   },
