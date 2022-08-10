@@ -1,5 +1,5 @@
 <template>
-  <AppHeader @click="scroll('down')"/>
+  <AppHeader :scroll="scroll" :scrollTo="scrollTo" />
   <IntroductionInfo />
   <hr id="pink"/>
    <div class="bg-logos">
@@ -10,7 +10,7 @@
   <MainFeatures/>
   <ScreenshotsInfo/>
   <PricingPlan />
-  <AppFooter @click="scroll('up')"/>
+  <AppFooter :scroll="scroll" :scrollTo="scrollTo" />
 </template>
 
 <script>
@@ -23,6 +23,20 @@ import AppFooter from "@/components/Footer";
 
 export default {
   name: 'App',
+  data() {
+    return {
+      scrollTo: {
+        try: {
+          name: 'Try for free',
+          scroll: 'up',
+        },
+        plans: {
+          name: 'Pricing',
+          scroll: 'down',
+        }
+      }
+    };
+  },
   methods: {
     scroll(value) {
       if(value === 'up')
@@ -33,7 +47,7 @@ export default {
             document.body.offsetHeight, document.documentElement.offsetHeight,
             document.body.clientHeight, document.documentElement.clientHeight
         );
-        window.scrollTo(0, scrollHeight);
+        window.scrollTo(0, (scrollHeight + 196));
       }
     }
   },

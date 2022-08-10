@@ -4,33 +4,8 @@
   <div class="footer-container">
     <img class="logo-transparent" src="@/assets/images/logos/logo_transparent.svg" alt="" />
     <div class="links-container">
-      <div
-          @click="scroll"
-          active="onclick"
-          class="link"
-      >
-        Products
-      </div>
-      <div
-          @click="scroll"
-          active="onclick"
-          class="link"
-      >
-        Pricing
-      </div>
-      <div
-          @click="scroll"
-          active="onclick"
-          class="link"
-      >
-        FAQ
-      </div>
-      <div
-          @click="scroll"
-          active="onclick"
-          class="link"
-      >
-        Blog
+      <div class="link" v-for="link in scrollTo" :key="link" @click="scroll(link.scroll)">
+        {{link.name}}
       </div>
     </div>
     <div class="links-container">
@@ -54,12 +29,9 @@ export default {
   props: {
     linkName: String,
     linkRoute: String,
+    scroll: Function,
+    scrollTo: Object,
   },
-  methods: {
-    scroll() {
-      window.scrollTo(0,0);
-    }
-  }
 }
 </script>
 

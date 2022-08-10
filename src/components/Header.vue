@@ -3,46 +3,18 @@
     <div class="container">
       <img alt="" class="logo" src="@/assets/images/logos/logo.svg" />
       <div class="links-container">
-        <div
-            @click="scroll"
-            active="onclick"
-            class="link"
-        >
-          Products
-        </div>
-        <div
-            @click="scroll"
-            active="onclick"
-            class="link"
-        >
-          Pricing
-        </div>
-        <div
-            @click="scroll"
-            active="onclick"
-            class="link"
-        >
-          FAQ
-        </div>
-        <div
-            @click="scroll"
-            active="onclick"
-            class="link"
-        >
-          Blog
+        <div class="link" v-for="link in scrollTo" :key="link" @click="scroll(link.scroll)">
+          {{link.name}}
         </div>
       </div>
+<!--     This will be a popup form soon -->
       <div class="container-sing">
         <div
-            @click="scrollDown"
-            active="onclick"
             class="sign-in-link"
         >
           Sign in
         </div>
         <div
-            @click="scroll"
-            active="onclick"
             class="sign-up-link"
         >
           Sign up
@@ -55,12 +27,9 @@
 <script>
 export default {
   name: 'AppHeader',
-  methods: {
-    scrollDown() {
-      let elem = this.$el
-      elem.scrollTop = elem.clientHeight;
-      //window.scrollTo(0, 4000);
-    }
+  props: {
+    scroll: Function,
+    scrollTo: Object,
   }
 }
 </script>
